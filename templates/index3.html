@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Inserir Dados</h3>
+<form action="{{url_for('criar')}}" method="post">
+    Titulo: <input type="text" name="nome">
+    <br><br>
+    Nota: <input type="text" name="nota">
+    <br><br>
+    <input type="submit" value="Salvar no Banco de Dados">
+</form>
+<h3>Alterar Nota</h3>
+<form action="{{url_for('alterando')}}" method="post">
+    Nome: <input type="text" name="nome">
+    <br><br>
+    Nota que deseja alterar: <input type="text" name="nota">
+    <br><br>
+    <input type="submit" value="Alterar no Banco de Dados">
+</form>
+<h3>Excluir Dados</h3>
+<form action="{{url_for('excluir')}}" method="post">
+    ID: <input type="text" name="id">
+    <br><br>
+    <input type="submit" value="Excluir no Banco de Dados">
+</form>
+<br><br>
+Listar Notas - <a href="{{url_for('principal')}}">Acessar</a><br>
+
+
+</body>
+</html>
