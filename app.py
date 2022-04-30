@@ -4,6 +4,8 @@ import dataset
 app = Flask(__name__)
 app.secret_key = 'MINHA_CHAVE_CRIPTOGRADAFA'
 
+# For register, create, delete and update data using flask and dataset
+
 @app.route('/')
 def main():
     return render_template('index2.html')
