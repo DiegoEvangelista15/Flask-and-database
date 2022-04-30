@@ -87,5 +87,6 @@ def excluir():
         link = (url_for('formulario_notas'))
         return f'Erro ao excluir, cadastre novamente em: <a href="{link}">Acessar</a>'
 
+#any doubts or help, please let me know
 
 app.run(debug=True)
